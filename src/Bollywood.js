@@ -14,7 +14,7 @@ const Bollywood = () => {
       alert("User is not authorized for this particular route");
     } else {
       try {
-        const response = await axios.get('http://localhost:9000/api/category/bollywood', {
+        const response = await axios.get('https://forthhandnodeapi.onrender.com/api/category/bollywood', {
           headers: {
             'Authorization': 'Bearer ' + token
           }
