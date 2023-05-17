@@ -8,7 +8,7 @@ const LoginForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:9000/api/category/login", { email, password });
+      const response = await axios.post("https://forthhandnodeapi.onrender.com/api/category/login", { email, password });
       const data = response.data;
       localStorage.setItem('token', data.token);
       console.log(data);

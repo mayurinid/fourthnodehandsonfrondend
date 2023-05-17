@@ -10,7 +10,7 @@ const RegisterForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:9000/api/category/register", {
+      const response = await axios.post("https://forthhandnodeapi.onrender.com/api/category/register", {
         email,
         password,
         name,
